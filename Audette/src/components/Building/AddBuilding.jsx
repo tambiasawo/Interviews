@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import useAddBuildingMutation from "../../queries/useAddBuilding";
 
 const AddBuilding = () => {
-  const { mutate, isError, error } = useAddBuildingMutation();
+  const { mutate } = useAddBuildingMutation();
   const [building, setBuilding] = useState({
     name: "",
     address: "",
