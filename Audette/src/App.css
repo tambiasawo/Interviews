@@ -1,0 +1,32 @@
+.app {
+  font-family: sans-serif;
+  text-align: center;
+  margin: 3rem;
+}
+
+input {
+  padding: 8px;
+  margin-right: 0.5rem;
+}
+
+button {
+  padding: 0.5rem;
+}
+
+button:hover {
+  cursor: pointer;
+  border: solid 1px;
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  margin: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+}

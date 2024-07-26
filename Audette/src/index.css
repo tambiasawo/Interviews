@@ -1,0 +1,81 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.dashboard {
+  margin: 0 20%;
+}
+
+.form-control {
+  width: 35%;
+  border: 1px solid;
+  border-radius: 5px;
+}
+.form-button {
+  width: 30%;
+  border-radius: 5px;
+  border: solid 1px transparent;
+  background-color: #d3d3d3;
+}
+
+.delete-button {
+  color: red;
+  background-color: white;
+  border-radius: 10%;
+  border: 1px solid black;
+}
+
+.buildings-list {
+  overflow-y: auto;
+  padding: 10px;
+  border: 1px solid;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px white;
+  height: fit-content;
+  max-height: 80vh;
+}
+
+.spinner {
+  margin: 10% auto;
+  width: 60px;
+  height: 60px;
+  border: 4px solid;
+  border-color: black transparent;
+  border-radius: 50%;
+  animation: spin infinite 1.8s;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .form-control {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .form-button {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .dashboard {
+    margin: 0;
+  }
+
+  .buildings-list {
+    max-height: 65vh;
+  }
+}
